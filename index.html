@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Binary Tree Visualizer</title>
+	</head>
+	<body>
+		<header>
+			<div id="title">Tree Visualizer</div>
+			<div id="array">
+				<label>Array:</label><br />
+				<input type="text" name="array" id="array-input" />
+			</div>
+			<div id="options">
+				<button onclick="treeAndArray()">Binary Tree Visualization</button>
+				<button onclick="heapify()">Max-Heap Visualization</button>
+				<button onclick="createBinarySearchTree()">
+					Binary Search Tree Visualization
+				</button>
+				<!-- <button onclick="treeAndArray()">Height Balanced Visualisation</button>
+				<button onclick="heapify()">Max-Heap Visualisation</button>
+				<button onclick="createBinarySearchTree()">BST Visualisation</button> -->
+			</div>
+		</header>
+
+		<img
+			src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/08/1-tree-and-its-various-parts.png"
+			width="600"
+			height="300"
+		/>
+
+		<!-- To display the text -->
+		<div id="blurb">
+			<div id="visual-title"></div>
+			<div id="instructions"></div>
+		</div>
+
+		<!-- To display Tree -->
+		<div id="binary-tree"></div>
+		<!-- To display Array -->
+		<div id="array-visual"></div>
+
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="./js/node.js"></script>
+		<script src="./js/heap.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
